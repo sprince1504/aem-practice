@@ -17,4 +17,10 @@ public @interface CaptivateConfig {
 
     @AttributeDefinition(name = "Captivate Prime Token Endpoint", description = "Captivate Prime Token Endpoint")
     String tokenEndPoints();
+
+    @AttributeDefinition(name = "API Key for Alpha Vantage", description = "Captivate Prime Token Endpoint")
+    String alphaVantageAPIKey();
+
+    @AttributeDefinition(name = "Endpoint URL for Alpha Vantage", description = "Captivate Prime Token Endpoint")
+    String alphaVantageEndPoint();
 }

@@ -39,6 +39,16 @@ public class CaptivateConfigImpl implements CaptivateConfig {
     }
 
     @Override
+    public String alphaVantageAPIKey() {
+        return this.captivateConfig.alphaVantageAPIKey();
+    }
+
+    @Override
+    public String alphaVantageEndPoint() {
+        return this.captivateConfig.alphaVantageEndPoint();
+    }
+
+    @Override
     public Class<? extends Annotation> annotationType() {
         return null;
     }
