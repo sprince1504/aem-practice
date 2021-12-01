@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
           jcr:primaryType="sling:OsgiConfig"
-          client_id="fa85d606-0f46-41c1-82eb-6441aee1955d"
-          client_secret="ebf115ec-05ca-4f9d-b181-489e3086b599"
+          client_id=""
+          client_secret=""
           client_code="us"
           tokenEndPoints = "https://captivateprime.adobe.com/oauth/token"
           alphaVantageAPIKey="0O18XUJ"
