@@ -5,6 +5,10 @@
         "set properties on /content/dam/mysite/jcr:content",
         "set cq:conf{String} to /conf/mysite",
         "set jcr:title{String} to \"My Site\"",
+        "end",
+        "create service user cpuser",
+        "set ACL for cpuser",
+        "allow jcr:all on /home",
         "end"
     ]
 }
