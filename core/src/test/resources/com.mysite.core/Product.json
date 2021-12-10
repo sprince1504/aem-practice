@@ -1,0 +1,21 @@
+{
+  "product": {
+    "jcr:primaryType": "cq:PageContent",
+    "fileReference": "content/vitamix/us/image.jpg",
+    "altText":"product Image Text",
+    "imageLinkTo": "/productpage/A2300.html",
+    "productSku":"056909",
+    "textAlignment": "left",
+    "title":"Blender",
+    "price": "5000",
+    "description":"vitamix blender",
+    "buttonLabel": "Buy Now",
+    "buttonLinkTo":"/productpage/A2300.html",
+    "backgroundColor": "Vitamix-gray",
+    "text":"vitamix blender",
+    "preTitle": "1960",
+    "titleType": "h4",
+    "titleStyle": "callout",
+    "customBgColor": "red"
+  }
+}
