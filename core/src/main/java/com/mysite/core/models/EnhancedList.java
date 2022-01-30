@@ -25,7 +25,7 @@ public class EnhancedList implements List {
 
     private static final Logger log = LoggerFactory.getLogger(EnhancedList.class);
 
-    public static final String RESOURCE_TYPE = "techdata/components/enhancedlist";
+    public static final String RESOURCE_TYPE = "project/components/enhancedlist";
     private static final String PAGE_PROPERTY_CQ_TAGS = "cq:tags";
     @Self
     private SlingHttpServletRequest request;
