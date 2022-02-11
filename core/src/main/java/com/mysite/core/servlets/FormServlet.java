@@ -1,3 +1,4 @@
+/*
 package com.mysite.core.servlets;
 
 
@@ -266,3 +267,4 @@ public class FormServlet extends SlingAllMethodsServlet {
         // new line, carriage-returns, slashes
         private static final String EXTRA_REGEX_CHARS = "\r\n\\\\";
 }
+*/
