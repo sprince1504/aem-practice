@@ -12,24 +12,25 @@ import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.ServletResolverConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.propertytypes.ServiceDescription;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
-
-@Component(immediate = true, service = Servlet.class, property = {
-        ServletResolverConstants.SLING_SERVLET_METHODS +"="+ HttpConstants.METHOD_GET,
-        ServletResolverConstants.SLING_SERVLET_PATHS + "=/bin/laravel/getquote",
-        Constants.SERVICE_DESCRIPTION + "= Servlet to Fetch the Stock quote",
-        Constants.SERVICE_VENDOR + "= Laravel"
-})
+@Component(service = { Servlet.class })
+@SlingServletResourceTypes(
+        resourceTypes="mysite/components/page",
+        methods=HttpConstants.METHOD_GET,
+        selectors="Laravel")
+@ServiceDescription("Simple Laravel Servlet")
 public class AlphaVantageStockServlet extends SlingAllMethodsServlet {
     private static final Logger logger = LoggerFactory.getLogger(AlphaVantageStockServlet.class);
     @Reference
